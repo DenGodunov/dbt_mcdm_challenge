@@ -34,5 +34,5 @@ In the end you will have a table like this:
 1.5 If we see that values for each KPI in range between min and max than we assume that mapping is correct  
 Otherwise we trying to find next candidate to recieve expected KPI value. Once we found good candidate we can update our initail mapping.
 1.6 Next step is to combine all tables into one view that should serve as data source for report  
-1.7 Create report with chart for each KPOI
+1.7 Create report with chart for each KPI  
 1.8 Compare report from 1.7 with requested one

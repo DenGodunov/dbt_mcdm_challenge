@@ -21,7 +21,7 @@ In the end you will have a table like this:
 1. Create a table that we want to receive at the end of the project with approximate values for each platform and KPI  
 1.1 if we open report https://lookerstudio.google.com/reporting/fa668749-b82f-41a8-a12e-f7d9c0733b57/page/tEnnC we can make assumptions about min and max values for each KPI:
 
-|   | Platform | Conversion Cost Min| Conversion Cost Max | Imressions Min | Imressions Max | Cost Per Engage Min|Cost Per Engage Max  | CPC Min  | CPC Max  |
+|   | Platform | Conversion Cost Min| Conversion Cost Max | Impressions Min | Impressions Max | Cost Per Engage Min|Cost Per Engage Max  | CPC Min  | CPC Max  |
 |---|----------|--------------------|----------------------|---------------|----------------|--------------------|---------------------|----------|----------|
 | 1 | TikTok   | 2000               | 4000                 | 35000000      | 48000000       |                  0 | 0.05                | 1.1      | 1.2      |
 | 2 | Bing     | 10                 | 30                   | 0             | 1000000        |                  0 | 0.05                | 0.8      | 0.9      |

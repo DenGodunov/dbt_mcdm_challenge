@@ -27,4 +27,11 @@ In the end you will have a table like this:
 | 2 | Bing     | 10                 | 30                   | 0             | 1000000        |                  0 | 0.05                | 0.8      | 0.9      |
 | 3 | Facebook | 5                  | 20                   | 5000000       | 7500000        |                0.1 | 0.15                | 0.9      | 1.1      |
 | 4 | Twitter  | 0                  | 5                    | 7500000       | 10000000       |               0.46 | 0.48                | 0.48     | 0.52     |
-
+1.2 Create s2t mapping between MCDM and each platform data set based on assumption that field names in MCDM and platrorm data set should be very similar ("conversion" and "conv" etc.)
+1.3 For each platform create and fill table grouped by categorical fields (this fields could be used in future as filters or dimensions)in BigQuery  
+1.4 Try naive approach - let's assume our mapping is correct, let's try calculate each KPI and compare it with desirable output from step 1.1
+1.5 If we see that values for each KPI in range between min and max than we assume that mapong is correct.
+Otherwise we trying to find next candidate to recieve expected KPI value. Once we found good candidate we can update our initail mapping.
+1.6 Next step is to combine all tables into one view that shoul be data source for report
+1.7 Create report with chart for each KPOI
+1.8 Compare report from 1.7 with requested one

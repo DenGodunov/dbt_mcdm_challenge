@@ -21,12 +21,20 @@ In the end you will have a table like this:
 1. Create a table that we want to receive at the end of the project with approximate values for each platform and KPI  
 1.1 if we open report https://lookerstudio.google.com/reporting/fa668749-b82f-41a8-a12e-f7d9c0733b57/page/tEnnC we can make assumptions about min and max values for each KPI:
 
-|   | Platform | Conversion Cost Min| Conversion Cost Max | Impressions Min | Impressions Max | Cost Per Engage Min|Cost Per Engage Max  | CPC Min  | CPC Max  |
+|   | Platform | Conversion Cost Min| Conversion Cost Max | Impressions Min | Impressions Max | Cost Per Engage Min|Cost Per Engage Max  | CPC Min  | CPC Max|
 |---|----------|--------------------|----------------------|---------------|----------------|--------------------|---------------------|----------|----------|
 | 1 | TikTok   | 2000               | 4000                 | 35000000      | 48000000       |                  0 | 0.05                | 1.1      | 1.2      |
 | 2 | Bing     | 10                 | 30                   | 0             | 1000000        |                  0 | 0.05                | 0.8      | 0.9      |
 | 3 | Facebook | 5                  | 20                   | 5000000       | 7500000        |                0.1 | 0.15                | 0.9      | 1.1      |
 | 4 | Twitter  | 0                  | 5                    | 7500000       | 10000000       |               0.46 | 0.48                | 0.48     | 0.52     |
+
+And each KPI calculated this way:
+| KPI               |  First field | Second field      |
+|-------------------|--------------|-------------------|
+| Conversion Cost   | spend        | total conversions |
+| Impressions       | Impresions   | none              |
+| Cost Per Engage   | spend        | engagements       |
+| CPC               | spend        | clicks            |
 
 1.2 Create s2t mapping between MCDM and each platform data set based on assumption that field names in MCDM and platrorm data set should be very similar ("conversion" and "conv" etc.)  
 1.3 For each platform create and fill table grouped by categorical fields (this fields could be used in future as filters or dimensions)in BigQuery  

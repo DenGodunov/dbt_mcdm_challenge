@@ -31,7 +31,7 @@ In the end you will have a table like this:
 1.2 Create s2t mapping between MCDM and each platform data set based on assumption that field names in MCDM and platrorm data set should be very similar ("conversion" and "conv" etc.)  
 1.3 For each platform create and fill table grouped by categorical fields (this fields could be used in future as filters or dimensions)in BigQuery  
 1.4 Try naive approach - let's assume our mapping is correct, let's try calculate each KPI and compare it with desirable output from step 1.1  
-1.5 If we see that values for each KPI in range between min and max than we assume that mapong is correct  
+1.5 If we see that values for each KPI in range between min and max than we assume that mapping is correct  
 Otherwise we trying to find next candidate to recieve expected KPI value. Once we found good candidate we can update our initail mapping.
 1.6 Next step is to combine all tables into one view that shoul be data source for report  
 1.7 Create report with chart for each KPOI

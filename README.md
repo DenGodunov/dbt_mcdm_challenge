@@ -9,7 +9,10 @@ In the end you will have a table like this:
 | likes            | 0     |
 | ad_id            | ad_id |
 
+<ul>
 As you can see if you don't have matching field in you source then place NUll for categorical and 0 for countable in front of MCDM field
+Example of 2t you can find in s2t folder: s2t_bing.MD
+</ul>
 
 2. Then you need to write data transformation file and place it into models/ads_performance
 3. Run dbt 'run command' for your new model

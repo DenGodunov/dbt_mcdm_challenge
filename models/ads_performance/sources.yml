@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: ads
+    dataset: dbt_mcdm_challenge
+    tables:
+    - name: bing
+      identifier: bing_grouped_by
+    - name: tiktok
+      identifier: tiktok_grouped_by
+    - name: twitter
+      identifier: twitter_grouped_by
+    - name: facebook
+      identifier: facebook_grouped_by

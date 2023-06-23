@@ -1,3 +1,4 @@
+{{ config(materialized='view') }}
 
 SELECT 
 ad_id,
@@ -26,8 +27,10 @@ spend,
 total_conversions,	
 video_views
 
-from {{ref('bing_grouped_by')}}
+from {{ source('ads','bing') }}
+
 UNION ALL
+
 SELECT 
 ad_id,
 add_to_cart,	
@@ -55,8 +58,10 @@ spend,
 total_conversions,	
 video_views
 
-from {{ref('twitter_grouped_by')}}
+from {{ source('ads','twitter') }}
+
 UNION ALL
+
 SELECT 
 ad_id,
 add_to_cart,	
@@ -83,9 +88,10 @@ shares,
 spend,	
 total_conversions,	
 video_views
-from {{ref('tiktok_grouped_by')}}
+FROM {{ source('ads','tiktok') }}
 
 UNION ALL
+
 SELECT
 ad_id,
 add_to_cart,
@@ -112,4 +118,4 @@ shares,
 spend,
 total_conversions,
 video_views
-from {{ref('facebook_grouped_by')}}
+FROM {{ source('ads','facebook') }}

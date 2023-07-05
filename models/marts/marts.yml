@@ -7,6 +7,12 @@ models:
       columns:
         - name: revenue
           description: "just sum of revenue"
+          
+    - name: ads_basic_performance_report_with_macro
+      description: mart used to test how union macro works
+      columns:
+        - name: revenue
+          description: "just sum of revenue"
             
     - name: data_for_report
       description: "Aggrageted mart for testing purposes"      

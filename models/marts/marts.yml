@@ -1,0 +1,15 @@
+
+version: 2
+
+models:
+    - name: ads_basic_performance_report
+      description: mart used to create report, main goal of this project
+      columns:
+        - name: revenue
+          description: "just sum of revenue"
+            
+    - name: data_for_report
+      description: "Aggrageted mart for testing purposes"      
+      columns:
+        - name: revenue
+          description: "just sum of revenue"

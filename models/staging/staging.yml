@@ -1,0 +1,32 @@
+
+version: 2
+
+models:
+
+    - name: bing_grouped_by
+      columns:
+        - name: channel
+          description: "Social media platform name"
+          tests:
+            - not_null
+
+    - name: twitter_grouped_by
+      columns:
+        - name: channel
+          description: "Social media platform name"
+          tests:
+            - not_null
+
+    - name: tiktok_grouped_by
+      columns:
+        - name: channel
+          description: "Social media platform name"
+          tests:
+            - not_null
+
+    - name: facebook_grouped_by
+      columns:
+        - name: channel
+          description: "Social media platform name"
+          tests:
+            - not_null

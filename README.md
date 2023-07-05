@@ -1,3 +1,5 @@
+### Link to my report - https://lookerstudio.google.com/u/0/reporting/5b717a9c-d46c-4955-8c04-b8f1f1648b5c
+
 ### If you want to add new ads platfrom  data source
 1. You need to prepare source to target (s2t) doc for example in excel file.
 To do this open mcdm_paid_ads_basic_performance_structure.csv and add try to match fields in your data source with mcdm_field_name.

@@ -1,4 +1,4 @@
-### Link to my report - https://lookerstudio.google.com/u/0/reporting/5b717a9c-d46c-4955-8c04-b8f1f1648b5c
+### Link to my report - https://lookerstudio.google.com/s/sL-aMdRQvM0
 
 ### If you want to add new ads platfrom  data source
 1. You need to prepare source to target (s2t) doc for example in excel file.

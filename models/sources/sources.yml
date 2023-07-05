@@ -3,12 +3,22 @@ version: 2
 sources:
   - name: ads
     dataset: dbt_mcdm_challenge
+    description: "Data from 4 social madia platforms"
+    tags: ["excelsrc"]
+    
     tables:
     - name: bing
+      description: "Bing platform data"
       identifier: bing_grouped_by
+      
     - name: tiktok
+      description: "TikTok platform data"
       identifier: tiktok_grouped_by
+      
     - name: twitter
+      description: "Twitter platform data"
       identifier: twitter_grouped_by
+      
     - name: facebook
+      description: "Facebook platform data"
       identifier: facebook_grouped_by
